@@ -11,7 +11,7 @@ from VCsMusicBot.services.callsmusic import callsmusic
 from VCsMusicBot.services.queues import queues
 
 
-@Client.on_message(filters.command(["ششغل","cpause"]) & filters.group & ~filters.edited)
+@Client.on_message(filters.command(["ربط","cpause"]) & filters.group & ~filters.edited)
 @errors
 @authorized_users_only
 async def pause(_, message: Message):
